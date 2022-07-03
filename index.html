@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+        ! Styles
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css"
+        integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--
+        ! Navbar
+    -->
+
+    <div class="custom-wrapper pure-g" id="menu">
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="pure-menu">
+                <a href="#" class="pure-menu-heading custom-brand">Aris</a>
+                <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+            </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+                    <li class="pure-menu-item"><a href="#how-it-works" class="pure-menu-link">How it works</a></li>
+                    <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--
+
+    ! Header
+
+    -->
+
+
+    <header class="pure-img first header">
+        <h1>Skin</h1>
+    </header>
+
+    <div class="pure-g second">
+        <div id="how-it-works" class="pure-u-1 pure-u-lg-1-2">
+            <h2>
+                Reveal your 100% customized regimen in a <span>5&nbsp;minute</span>&nbsp;survey!
+            </h2>
+            
+            <p>
+                Here's how it works: You simply answer a short series of questions about your complexion. Is it oily or dry in certain areas? Are you sensitive to any specific ingredients? Is your biggest concern developing fine lines, fading dark spots, or something else entirely? After responding to our guided questions and submiting your answers, we'll walk you through some products that we think could work for you, plus briefly explain each one via email.
+            </p>
+        </div>
+        <div class="pure-img pure-u-1 pure-u-lg-1-2"></div>
+
+    </div>
+
+    <div class="pure-g third">
+        <div id="form" class="pure-u-1">
+            <h2>Skincare Questionnaire</h2>
+            <form class="pure-form pure-form-aligned" id="formulario">
+                <fieldset>
+                    <div class="pure-control-group">
+                        <label for="name">Name</label>
+                        <input class="pure-input-1-1" type="text" id="name" placeholder="Name" required />
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="email">Email Address</label>
+                        <input class="pure-input-1-1" type="email" id="email" placeholder="Email" required />
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="age">What's your age?</label>
+                        <input class="pure-input-1-1" type="number" id="age" placeholder="Age" />
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="gender">What's your gender?</label>
+                        <select id="gender">
+                        <option>Rather not say</option>
+                        <option>Female</option>
+                        <option>Male</option>
+                        <option>Transgender</option>
+                        <option>Non-binary</option>
+                        <option>Other/Not specified</option>
+                        </select>
+                    </div>
+
+                    <div class="skin-type radio">
+                    <div class="pure-control-group">
+                        <label class="pure-radio" for="dry-skin">What is your&nbsp;skin&nbsp;type?</label>
+                        <input type="radio" id="dry-skin" name="skin-type"/> Dry skin
+                    </div> 
+
+                    <div class="pure-control-group">
+                        <label class="pure-radio" for="oily-skin"></label>
+                        <input type="radio" id="oily-skin" name="skin-type"/> Oily skin
+                    </div> 
+
+                    <div class="pure-control-group">
+                        <label class="pure-radio" for="combination-skin"></label>
+                        <input type="radio" id="combination-skin" name="skin-type"/> Combination skin
+                    </div> 
+
+                    <div class="pure-control-group">
+                        <label class="pure-radio" for="sensitive-skin"></label>
+                        <input type="radio" id="sensitive-skin" name="skin-type"/> Sensitive skin
+                    </div> 
+
+                    <div class="pure-control-group">
+                        <label class="pure-radio" for="normal-skin"></label>
+                        <input type="radio" id="normal-skin" name="skin-type"/> Normal skin
+                    </div>
+                    </div>
+
+
+                    <div class="skincare-frequency radio">
+                        <div class="pure-control-group pure-radio">
+                            <label for="never">How often do you use skincare products?</label>
+                            <input type="radio" id="never" name="skincare-frequency"/> Never
+                        </div> 
+    
+                        <div class="pure-control-group pure-radio" id="frequency1">
+                            <label for="rarely"></label>
+                            <input type="radio" id="rarely" name="skincare-frequency"/> Rarely
+                        </div> 
+    
+                        <div class="pure-control-group pure-radio" id="frequency2">
+                            <label for="sometimes"></label>
+                            <input type="radio" id="sometimes" name="skincare-frequency"/> Sometimes
+                        </div> 
+    
+                        <div class="pure-control-group pure-radio" id="frequency3">
+                            <label for="everyday"></label>
+                            <input type="radio" id="everyday" name="skincare-frequency"/> Everyday
+                        </div> 
+                    </div>
+
+                    <div class="skincare-frequency radio">
+                        <div class="pure-control-group pure-checkbox" id="checkbox">
+                            <label for="dark-circles">Which skin problems are you currently struggling the most with?</label>
+                            <input type="checkbox" id="dark-circles" name="dark-circles"/> Dark circles
+                        </div> 
+                    
+    
+                        <div class="pure-control-group pure-checkbox" id="frequency1">
+                            <label for="wrinkles"></label>
+                            <input type="checkbox" id="wrinkles" name="wrinkles"/> Wrinkles
+                        </div> 
+    
+                        <div class="pure-control-group pure-checkbox" id="frequency2">
+                            <label for="rosacea"></label>
+                            <input type="checkbox" id="rosacea" name="rosacea"/> Rosacea
+                        </div> 
+    
+                        <div class="pure-control-group pure-checkbox" id="frequency3">
+                            <label for="uneven-skintone"></label>
+                            <input type="checkbox" id="uneven-skintone" name="uneven-skintone"/> Uneven skintone
+                        </div> 
+
+                        <div class="pure-control-group pure-checkbox" id="frequency3">
+                            <label for="skin-sensitivity"></label>
+                            <input type="checkbox" id="skin-sensitivity" name="skin-sensitivity"/> Skin sensitivity
+                        </div> 
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="age">Additional information about your skin you'd like to tell us?</label>
+                        <textarea type="textarea" id="aligned-cb" placeholder="What skincare products do you usually use?"></textarea>
+                    </div>
+                    
+
+
+                    <div class="pure-controls">
+                        <label for="aligned-cb" class="pure-checkbox">
+                            <input type="checkbox" id="aligned-cb" /> I&#x27;ve read the terms and conditions
+                        </label>
+                        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+    <footer id="contact">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2 footer-info">
+                <p>
+                    ©2022 Aris Skincare, Inc. All rights reserved.
+                </p>
+                <p>
+                    Website made as part of the New Responsive Web Design Course provided by <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+                </p>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2 footer-icons">
+                <a href="https://github.com/praxeds"><a href="https://github.com/praxeds"><ion-icon name="logo-github"></ion-icon></a>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <ion-icon name="logo-pinterest"></ion-icon>
+                <a href="mailto:contact@julianapraxedes.com"><ion-icon name="mail-sharp"></ion-icon></a>
+                
+            </div>
+        </div>
+    </footer>
+
+
+<!--
+
+    ! Navbar script
+
+-->
+
+    <script>
+        (function (window, document) {
+        var menu = document.getElementById('menu'),
+            rollback,
+            WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+  
+        function toggleHorizontal() {
+            menu.classList.remove('closing');
+            [].forEach.call(
+                document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+                function(el){
+                    el.classList.toggle('pure-menu-horizontal');
+                }
+            );
+        };
+  
+        function toggleMenu() {
+            // set timeout so that the panel has a chance to roll up
+            // before the menu switches states
+            if (menu.classList.contains('open')) {
+                menu.classList.add('closing');
+                rollBack = setTimeout(toggleHorizontal, 500);
+            }
+            else {
+                if (menu.classList.contains('closing')) {
+                    clearTimeout(rollBack);
+                } else {
+                    toggleHorizontal();
+                }
+            }
+            menu.classList.toggle('open');
+            document.getElementById('toggle').classList.toggle('x');
+        };
+  
+        function closeMenu() {
+            if (menu.classList.contains('open')) {
+                toggleMenu();
+            }
+        }
+  
+        document.getElementById('toggle').addEventListener('click', function (e) {
+            toggleMenu();
+            e.preventDefault();
+        });
+  
+        window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+        })(this, this.document);
+  
+    </script>
+    
+<!--
+
+    ! Icons
+
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
