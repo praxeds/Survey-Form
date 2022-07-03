@@ -15,6 +15,7 @@
     --secondary-color: #3a2618;
     --secondary-color-darker: #080604;
     --accent-color: #27756b;
+    --accent-color-lighter: #0cb19b;
     box-sizing: border-box;
 }
 
@@ -70,7 +71,7 @@ h2 {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-color);
+    background: var(--accent-color-lighter);
     border-radius: 6px;
     border: 3px solid transparent;
     background-clip: content-box;
@@ -186,15 +187,60 @@ h2 {
 }
 
 h1 {
+    font-size: 2.5rem;
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     text-transform: uppercase;
     color: var(--background-color);
+}
+
+h1::after {
+    content: ".";
+    animation: period .85s step-end infinite;
+}
+
+h1:hover:after {
+    content: "";
+}
+
+h1:hover span {
+    display: none
+  }
+
+h1:hover::before {
+    content: "арьс ";
+} 
+  
+h1:hover:after {
+    border-right: .15em solid var(--background-color);
+    content: "beauty";
+    color: var(--accent-color);
+    animation: blink .85s step-end infinite;
+  }
+
+@keyframes period {
+    10% {
+        color: transparent;
+    }
+    49% {
+        color: transparent;
+    }
+    50% {
+        color: var(--background-color);
+    }
+    9% {
+        color: var(--background-color);
+    }
+    
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: var(--background-color); }
 }
 
 /*
@@ -256,7 +302,7 @@ h1 {
 }
 
 #form button {
-    background-color: #0cb19b;
+    background-color: var(--accent-color-lighter);
 }
 
 #checkbox {
@@ -333,6 +379,19 @@ footer p {
     }
 }
 
+@media screen and (max-width: 37em) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 29.4em) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
 @media screen and (max-width: 28.1em) {
 
     .second div:first-of-type {
@@ -345,6 +404,12 @@ footer p {
     
 
     h2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 23em) {
+    h1 {
         font-size: 1rem;
     }
 }
